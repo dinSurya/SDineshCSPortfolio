@@ -193,6 +193,11 @@ a {
     background-color: var(--bg-color);
 }
 
+.carousel-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 .project-card {
     background-color: var(--bg-light);
     padding: 2rem;
