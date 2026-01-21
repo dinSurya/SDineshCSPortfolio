@@ -383,15 +383,15 @@ body {
 }
 
 .contact-card .card-title {
-    color: var(--bg-dark);
+    color: #ffffff;
 }
 
 .contact-card .card-text {
-    color: var(--bg-dark);
+    color: #ffffff;
 }
 
 .contact-card .card-link {
-    color: var(--primary-color);
+    color: #ffffff;
     text-decoration: none !important;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -406,7 +406,11 @@ body {
     text-decoration: none !important;
     transition: all 0.3s ease;
     box-shadow: var(--shadow);
-    color: var(--text-color);
+    color: #ffffff;
+}
+
+.social-card .card-title {
+    color: #ffffff;
 }
 
 .social-card:hover {
