@@ -36,6 +36,10 @@ body {
     background-color: var(--bg-color);
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -295,7 +299,7 @@ body {
     line-height: 1.6;
 }
 
-.experience-card .card-link {
+.experience-card {
     color: var(--primary-color);
 }
 
