@@ -206,6 +206,7 @@ a {
     box-shadow: var(--shadow);
     max-width: 800px;
     margin: 0 auto;
+    transition: 0.3s ease-in-out;
 }
 
 .carousel-content-wrapper {
@@ -220,7 +221,7 @@ a {
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     margin: auto;
-    transition: background-color 0.3s ease, opacity 0.3s ease;
+    transition: background-color 0.3s ease, opacity 0.3s ease-in-out;
 }
 .carousel-control-next {
     background-color: rgba(0, 0, 0, 0);
@@ -229,7 +230,7 @@ a {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     margin: auto;
-    transition: background-color 0.3s ease, opacity 0.3s ease;
+    transition: background-color 0.3s ease, opacity 0.3s ease-in-out;
 }
 
 .carousel-control-prev:hover {
