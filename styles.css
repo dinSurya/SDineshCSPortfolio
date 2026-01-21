@@ -215,14 +215,14 @@ a {
 /* Carousel Controls Styling */
 .carousel-control-prev,
 .carousel-control-next {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 1);
     border-radius: 4px;
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
     opacity: 0.8;
 }
 
