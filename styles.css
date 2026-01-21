@@ -366,6 +366,98 @@ body {
     font-size: 1.1rem;
 }
 
+/* Contact Methods Cards */
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-method-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-lighter) 100%);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-method-card:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.method-icon {
+    font-size: 2.5rem;
+    min-width: 60px;
+    text-align: center;
+}
+
+.method-content h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.method-content a,
+.method-content p {
+    color: var(--light-text);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.method-content a:hover {
+    color: var(--primary-color);
+}
+
+/* Social Methods */
+.social-methods {
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-lighter) 100%);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.social-methods h5 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.social-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background: var(--bg-light);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.social-icon {
+    font-size: 2rem;
+}
+
+.social-btn span {
+    font-size: 0.9rem;
+}
+
 .contact .card {
     box-shadow: var(--shadow);
 }
