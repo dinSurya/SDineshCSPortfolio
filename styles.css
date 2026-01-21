@@ -106,20 +106,24 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
-/* About Section */
-.about {
-    padding: 80px 20px;
-    background-color: var(--bg-light);
-}
-
-.about h2 {
+/* Global Section Styling */
+.about h2,
+.projects h2,
+.experience h2,
+.skills h2,
+.contact h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     text-align: center;
     color: var(--text-color);
 }
 
-.about-text p {
+/* About Section */
+.about {
+    padding: 80px 20px;
+    background-color: var(--bg-light);
+}
+
     margin-bottom: 1rem;
     color: var(--light-text);
     line-height: 1.8;
@@ -148,12 +152,6 @@ body {
 .projects {
     padding: 80px 20px;
     background-color: var(--bg-color);
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
 }
 
 .project-card {
@@ -215,11 +213,6 @@ body {
 .project-links {
     display: flex;
     gap: 1rem;
-}
-
-.project-links {
-    display: flex;
-    gap: 1rem;
     flex-wrap: wrap;
     margin-top: 1rem;
 }
@@ -246,13 +239,6 @@ body {
 .experience {
     padding: 80px 20px;
     background-color: var(--bg-light);
-}
-
-.experience h2 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    color: var(--text-color);
 }
 
 .experience-card {
@@ -319,11 +305,8 @@ body {
 }
 
 .skill-list li:hover {
-    col h2 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    color: var(--text-color);
+    color: var(--primary-color);
+    padding-left: 0.5rem;
 }
 
 .skills .card {
@@ -341,36 +324,6 @@ body {
     margin: 0 auto;
 }
 
-.contact-info {
-    display: grid;
-    gap: 2rem;
-}
-
-.contact-item h4 {
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
-.contact-item a {
-    color: var(--light-text);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-item a:hover {
-    color: var(--primary-color);
-}
-
-.social-links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: h2 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    color: var(--text-color);
-}
-
 .contact-subtitle {
     text-align: center;
     color: var(--light-text);
@@ -378,95 +331,49 @@ body {
 }
 
 /* Contact Methods Cards */
-.contact-methods {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.contact-method-card {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 2rem;
-    background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-lighter) 100%);
-    border-left: 4px solid var(--primary-color);
-    border-radius: 8px;
-    box-shadow: var(--shadow);
+.contact-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-method-card:hover {
-    transform: translateX(10px);
-    box-shadow: var(--shadow-lg);
-}
-
-.method-icon {
-    font-size: 2.5rem;
-    min-width: 60px;
-    text-align: center;
-}
-
-.method-content h5 {
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-}
-
-.method-content a,
-.method-content p {
-    color: var(--light-text);
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.method-content a:hover {
-    color: var(--primary-color);
-}
-
-/* Social Methods */
-.social-methods {
-    padding: 2rem;
-    background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-lighter) 100%);
-    border-radius: 12px;
     box-shadow: var(--shadow);
 }
 
-.social-methods h5 {
-    color: var(--primary-color);
-    font-weight: 600;
-}
-
-.social-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-    padding: 1.5rem;
-    background: var(--bg-light);
-    border: 2px solid var(--primary-color);
-    border-radius: 8px;
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.social-btn:hover {
-    background-color: var(--primary-color);
-    color: white;
+.contact-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
 
-.social-icon {
+.contact-icon {
     font-size: 2rem;
+    min-width: 50px;
+    text-align: center;
 }
 
-.social-btn span {
-    font-size: 0.9rem;
+.contact-card .card-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-card .card-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Social Cards */
+.social-card {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.social-card:hover {
+    background-color: var(--bg-lighter) !important;
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--secondary-color) !important;
+}
+
+.social-icon {
+    font-size: 2.5rem;
 }
 
 .contact .card {
