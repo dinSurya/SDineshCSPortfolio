@@ -90,8 +90,8 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2>Featured Projects</h2>
-            <div class="card carousel-card">
-                <div id="projectsCarousel" class="carousel slide carousel-container" data-bs-ride="false">
+            <div id="projectsCarousel" class="carousel slide carousel-container" data-bs-ride="false">
+                <div class="card carousel-card">
                     <div class="carousel-content-wrapper">
                         <div class="carousel-inner">
                             <!-- Project 1 -->
@@ -177,6 +177,16 @@
                         <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" aria-label="Project 3"></button>
                     </div>
                 </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
