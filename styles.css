@@ -106,6 +106,23 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
+/* Global Card Text Styling */
+.card {
+    color: var(--text-color);
+}
+
+.card-body {
+    color: var(--light-text);
+}
+
+.card-title {
+    color: var(--text-color);
+}
+
+.card-text {
+    color: var(--light-text);
+}
+
 /* Global Section Styling */
 .about h2,
 .projects h2,
@@ -347,6 +364,14 @@ body {
     text-align: center;
 }
 
+.contact-card .card-title {
+    color: var(--primary-color);
+}
+
+.contact-card .card-text {
+    color: var(--light-text);
+}
+
 .contact-card .card-link {
     color: var(--primary-color);
     text-decoration: none;
@@ -363,6 +388,7 @@ body {
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: var(--shadow);
+    color: var(--text-color);
 }
 
 .social-card:hover {
@@ -374,6 +400,10 @@ body {
 
 .social-icon {
     font-size: 2.5rem;
+}
+
+.social-card .card-title {
+    color: var(--primary-color);
 }
 
 .contact .card {
