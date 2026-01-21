@@ -215,7 +215,7 @@ a {
 /* Carousel Controls Styling */
 .carousel-control-prev {
     background-color: rgba(0, 0, 0, 0);
-    max-height: 50%;
+    max-height: 25%;
     max-width: 25%;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -224,7 +224,7 @@ a {
 }
 .carousel-control-next {
     background-color: rgba(0, 0, 0, 0);
-    max-height: 50%;
+    max-height: 25%;
     max-width: 25%;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
