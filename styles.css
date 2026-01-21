@@ -23,6 +23,12 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Override Bootstrap Primary Color to Purple */
+:root {
+    --bs-primary: #a855f7;
+    --bs-primary-rgb: 168, 85, 247;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -141,6 +147,11 @@ body {
     background-color: var(--bg-light);
 }
 
+.about-text {
+    color: var(--light-text);
+}
+
+.about-text p {
     margin-bottom: 1rem;
     color: var(--light-text);
     line-height: 1.8;
@@ -157,6 +168,13 @@ body {
 
 .stat-card:hover {
     transform: translateY(-5px);
+}
+
+.stat-label {
+    color: var(--light-text);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
 }
 
 .stat-value {
