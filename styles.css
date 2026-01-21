@@ -198,6 +198,14 @@ a {
     margin: 0 auto;
 }
 
+.carousel-card {
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
 .carousel-content-wrapper {
     position: relative;
 }
