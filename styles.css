@@ -217,18 +217,29 @@ body {
     gap: 1rem;
 }
 
-.project-link {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    border-bottom: 2px solid transparent;
-    padding-bottom: 2px;
+.project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
-.project-link:hover {
-    color: var(--secondary-color);
-    border-bottom-color: var(--primary-color);
+.project-links .btn {
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.project-links .btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.project-links .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
 }
 
 /* Experience & Leadership Section */
