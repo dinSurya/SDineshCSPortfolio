@@ -383,16 +383,16 @@ body {
 }
 
 .contact-card .card-title {
-    color: var(--primary-color);
+    color: var(--bg-dark);
 }
 
 .contact-card .card-text {
-    color: var(--light-text);
+    color: var(--bg-dark);
 }
 
 .contact-card .card-link {
     color: var(--primary-color);
-    text-decoration: none;
+    text-decoration: none !important;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -403,7 +403,7 @@ body {
 
 /* Social Cards */
 .social-card {
-    text-decoration: none;
+    text-decoration: none !important;
     transition: all 0.3s ease;
     box-shadow: var(--shadow);
     color: var(--text-color);
