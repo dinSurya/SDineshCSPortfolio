@@ -7,7 +7,7 @@ Welcome to my Computer Science portfolio! This is a comprehensive showcase of my
 I'm a driven and detail-oriented Computer Science student with extensive experience in Python and Java. I have demonstrated expertise in full-stack application development and data analysis techniques. I'm passionate about leveraging technology to create efficient and innovative solutions.
 
 - **Education**: B.S. in Computer Science, University of Maryland (Aug 2025 – May 2029)
-- **Location**: College Park, MD
+- **Location**: Herndon, VA
 - **Email**: surya.dineshkumar@gmail.com
 
 ## 📂 Portfolio Sections
