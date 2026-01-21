@@ -204,6 +204,8 @@ a {
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: var(--shadow);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .carousel-content-wrapper {
