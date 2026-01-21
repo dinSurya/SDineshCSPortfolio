@@ -216,7 +216,9 @@ a {
 .carousel-control-prev,
 .carousel-control-next {
     background-color: rgba(0, 0, 0, 0);
-    border-radius: 1px;
+    max-height: 50%;
+    max-width: 25%;
+    border-radius: 10px;
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
