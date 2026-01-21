@@ -6,15 +6,17 @@
 
 /* Variables */
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --text-color: #1f2937;
-    --light-text: #6b7280;
-    --bg-color: #ffffff;
-    --bg-light: #f9fafb;
-    --border-color: #e5e7eb;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.15);
+    --primary-color: #a855f7;
+    --secondary-color: #9333ea;
+    --accent-color: #ec4899;
+    --text-color: #f3f4f6;
+    --light-text: #d1d5db;
+    --bg-color: #111827;
+    --bg-light: #1f2937;
+    --bg-lighter: #374151;
+    --border-color: #4b5563;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.5);
 }
 
 html {
@@ -77,7 +79,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, #a855f7 0%, #9333ea 50%, #7c3aed 100%);
     color: white;
     padding: 120px 20px;
     text-align: center;
@@ -155,7 +157,7 @@ body {
 }
 
 .stat-card {
-    background-color: white;
+    background-color: var(--bg-light);
     padding: 2rem;
     border-radius: 8px;
     text-align: center;
@@ -183,6 +185,7 @@ body {
 /* Projects Section */
 .projects {
     padding: 80px 20px;
+    background-color: var(--bg-color);
 }
 
 .projects-grid {
@@ -192,7 +195,7 @@ body {
 }
 
 .project-card {
-    background-color: white;
+    background-color: var(--bg-light);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: var(--shadow);
@@ -220,7 +223,7 @@ body {
 .project-date {
     color: var(--light-text);
     font-size: 0.9rem;
-    background-color: var(--bg-light);
+    background-color: var(--bg-lighter);
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
 }
@@ -239,7 +242,7 @@ body {
 }
 
 .tag {
-    background-color: var(--bg-light);
+    background-color: var(--bg-lighter);
     color: var(--primary-color);
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
@@ -269,6 +272,7 @@ body {
 /* Experience & Leadership Section */
 .experience {
     padding: 80px 20px;
+    background-color: var(--bg-light);
 }
 
 .experience-grid {
@@ -278,7 +282,7 @@ body {
 }
 
 .experience-card {
-    background-color: white;
+    background-color: var(--bg-lighter);
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: var(--shadow);
@@ -316,7 +320,7 @@ body {
 
 .exp-badge {
     display: inline-block;
-    background-color: var(--bg-light);
+    background-color: var(--bg-lighter);
     color: var(--primary-color);
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
@@ -339,7 +343,7 @@ body {
 /* Skills Section */
 .skills {
     padding: 80px 20px;
-    background-color: var(--bg-light);
+    background-color: var(--bg-color);
 }
 
 .skills-grid {
@@ -349,7 +353,7 @@ body {
 }
 
 .skill-category {
-    background-color: white;
+    background-color: var(--bg-light);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: var(--shadow);
@@ -384,6 +388,7 @@ body {
 /* Contact Section */
 .contact {
     padding: 80px 20px;
+    background-color: var(--bg-light);
 }
 
 .contact-subtitle {
@@ -445,7 +450,7 @@ body {
 
 /* Footer */
 .footer {
-    background-color: var(--text-color);
+    background-color: #0f172a;
     color: white;
     text-align: center;
     padding: 2rem 20px;
