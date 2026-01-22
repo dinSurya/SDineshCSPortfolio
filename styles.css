@@ -204,7 +204,7 @@ a {
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: var(--shadow);
-    max-width: 800px;
+    max-width: 50%;
     margin: 0 auto;
     transition: 0.3s ease-in-out;
 }
@@ -217,7 +217,7 @@ a {
 .carousel-control-prev {
     background-color: rgba(0, 0, 0, 0);
     max-height: 25%;
-    max-width: 25%;
+    max-width: 15%;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     margin: auto;
@@ -226,7 +226,7 @@ a {
 .carousel-control-next {
     background-color: rgba(0, 0, 0, 0);
     max-height: 25%;
-    max-width: 25%;
+    max-width: 15%;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     margin: auto;
@@ -407,6 +407,8 @@ a {
 
 .skills .card:hover {
     transform: translateY(-5px)
+}
+
 .contact-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -510,7 +512,6 @@ a {
 
 .contact .btn-primary:hover {
     background-color: var(--secondary-color);
-    border
 }
 
 @media (max-width: 768px) {
