@@ -204,7 +204,7 @@ a {
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: var(--shadow);
-    max-width: 50%;
+    max-width: 100%;
     margin: 0 auto;
     transition: 0.3s ease-in-out;
 }
