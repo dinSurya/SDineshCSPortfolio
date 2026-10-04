@@ -166,7 +166,7 @@ export const projects: Project[] = [
       { label: 'Devpost', href: 'https://devpost.com/software/success-metric-dashboard', kind: 'writeup' },
       { label: 'Code', href: 'https://github.com/dinSurya/TSWhackUMBC', kind: 'code' },
     ],
-    image: '/assets/projects/success-metrics.png',
+    image: '/assets/projects/success-metrics.jpg',
   },
   {
     id: 'cs',
@@ -196,7 +196,7 @@ export const projects: Project[] = [
       { label: 'Live demo', href: 'https://cleaning-scheduler-nine.vercel.app/', kind: 'demo' },
       { label: 'Code', href: 'https://github.com/dinSurya/cleaning-scheduler', kind: 'code' },
     ],
-    image: '/assets/projects/cleaning-scheduler.png',
+    image: '/assets/projects/cleaning-scheduler.jpg',
   },
   {
     id: 'mf',
@@ -225,7 +225,7 @@ export const projects: Project[] = [
       { label: 'Visit site', href: 'https://suryad.pythonanywhere.com', kind: 'demo' },
       { label: 'Code', href: 'https://github.com/dinSurya/TheMusicFactory', kind: 'code' },
     ],
-    image: '/assets/projects/music-factory.png',
+    image: '/assets/projects/music-factory.jpg',
   },
   {
     id: 'md',
@@ -255,6 +255,7 @@ export const skillSources = [
   { id: 'smd', label: 'Success Metrics Dashboard' },
   { id: 'cs', label: 'Cleaning Scheduler' },
   { id: 'mf', label: 'The Music Factory' },
+  { id: 'md', label: 'My Desktop' },
   { id: 'ina', label: 'INA Solutions' },
   { id: 'cwhq', label: 'CodeWizardsHQ' },
 ] as const
