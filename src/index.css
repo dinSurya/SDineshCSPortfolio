@@ -1,0 +1,83 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-ink: #0d0e11;
+  --color-ink-2: #111216;
+  --color-panel: #15171c;
+  --color-panel-2: #1c1f26;
+  --color-line: #2a2e37;
+  --color-line-2: #3a3f4b;
+  --color-paper: #eceae3;
+  --color-soft: #c9ccd3;
+  --color-muted: #9ca0aa;
+  --color-accent: #8d9cff;
+  --color-accent-2: #a9b4ff;
+  --color-warm: #ffb27a;
+
+  --font-display: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif;
+  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --animate-blink: blink 1s steps(1) infinite;
+  --animate-fadeup: fadeup 0.35s ease both;
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  @keyframes fadeup {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: none; }
+  }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body { @apply bg-ink text-paper font-sans antialiased; }
+  :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+  ::selection { background: var(--color-accent); color: var(--color-ink); }
+}
+
+@utility eyebrow {
+  @apply font-mono text-[13px] tracking-[.08em] text-accent;
+}
+
+@utility section-title {
+  @apply m-0 font-display text-4xl font-extrabold leading-[1.05] tracking-[-0.03em] sm:text-[52px];
+}
+
+@utility tag {
+  @apply rounded-md border border-line bg-panel-2 px-2 py-1 font-mono text-xs text-soft;
+}
+
+@utility btn {
+  @apply inline-flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-full px-5 py-3 text-[15px] font-semibold no-underline transition hover:-translate-y-0.5;
+}
+
+@utility btn-acc {
+  @apply btn bg-accent text-ink hover:bg-accent-2;
+}
+
+@utility btn-ghost {
+  @apply btn border border-line-2 text-paper hover:border-paper;
+}
+
+@utility chip {
+  @apply min-h-11 cursor-pointer rounded-full border px-4 py-2.5 text-sm transition;
+}
+
+@utility chip-on {
+  @apply border-paper bg-paper text-ink;
+}
+
+@utility chip-off {
+  @apply border-line-2 bg-transparent text-paper hover:border-paper;
+}
+
+@utility placeholder-hatch {
+  background: repeating-linear-gradient(135deg, #15171c 0 10px, #1b1e25 10px 20px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+}
