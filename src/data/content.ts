@@ -1,13 +1,16 @@
 // All site content lives here so the hero, projects, modal, skills and
 // command palette read from one source. Update this file, not the components.
 
+// Files in public/ are served under Vite's base path (the GitHub Pages repo path in production).
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`
+
 export const profile = {
   name: 'Surya Dineshkumar',
   email: 'surya.dineshkumar@gmail.com',
   github: 'https://github.com/dinSurya',
   linkedin: 'https://www.linkedin.com/in/surya-dineshkumar',
-  resume: '/Surya_Dineshkumar_Resume.pdf',
-  photo: '/assets/surya-profile-photo.jpeg',
+  resume: asset('Surya_Dineshkumar_Resume.pdf'),
+  photo: asset('assets/surya-profile-photo.jpeg'),
   location: 'Herndon, VA',
 }
 
@@ -168,7 +171,7 @@ export const projects: Project[] = [
       { label: 'Devpost', href: 'https://devpost.com/software/success-metric-dashboard', kind: 'writeup' },
       { label: 'Code', href: 'https://github.com/dinSurya/TSWhackUMBC', kind: 'code' },
     ],
-    image: '/assets/projects/success-metrics.jpg',
+    image: asset('assets/projects/success-metrics.jpg'),
   },
   {
     id: 'cs',
@@ -198,7 +201,7 @@ export const projects: Project[] = [
       { label: 'Live demo', href: 'https://cleaning-scheduler-nine.vercel.app/', kind: 'demo' },
       { label: 'Code', href: 'https://github.com/dinSurya/cleaning-scheduler', kind: 'code' },
     ],
-    image: '/assets/projects/cleaning-scheduler.jpg',
+    image: asset('assets/projects/cleaning-scheduler.jpg'),
   },
   {
     id: 'mf',
@@ -227,7 +230,7 @@ export const projects: Project[] = [
       { label: 'Visit site', href: 'https://suryad.pythonanywhere.com', kind: 'demo' },
       { label: 'Code', href: 'https://github.com/dinSurya/TheMusicFactory', kind: 'code' },
     ],
-    image: '/assets/projects/music-factory.jpg',
+    image: asset('assets/projects/music-factory.jpg'),
   },
   {
     id: 'md',

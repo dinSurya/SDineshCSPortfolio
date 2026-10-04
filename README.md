@@ -40,7 +40,11 @@ Copy `.env.example` to `.env.local` and set `VITE_FORMSPREE_ID` to send messages
 
 ## Deploying
 
-Any static host works. On **Vercel** or **Netlify**, import the repo; the defaults (`npm run build`, output `dist`) are detected automatically. Add `VITE_FORMSPREE_ID` in the host's environment settings if you use Formspree.
+The site is deployed to GitHub Pages at https://dinsurya.github.io/SDineshCSPortfolio/ by [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) on every push to `main`. In the repo's **Settings → Pages**, the source must be set to **GitHub Actions**.
+
+`base` in [`vite.config.ts`](vite.config.ts) matches the repo name. If the repo is renamed or moved to a custom domain, update it (use `'/'` for a custom domain).
+
+To use Formspree in production, add `VITE_FORMSPREE_ID` as a repository variable under **Settings → Secrets and variables → Actions → Variables**.
 
 ## Structure
 
