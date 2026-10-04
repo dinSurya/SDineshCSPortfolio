@@ -1,9 +1,16 @@
 import { useState } from 'react'
 import SiteNav from './components/SiteNav'
 import Hero from './components/Hero'
+import About from './components/About'
+import Experience from './components/Experience'
+import Skills from './components/Skills'
+import Contact from './components/Contact'
+import { profile } from './data/content'
 
 export default function App() {
   const [, setPaletteOpen] = useState(false)
+
+  const copyEmail = () => navigator.clipboard?.writeText(profile.email)
 
   return (
     <>
@@ -13,6 +20,10 @@ export default function App() {
       <SiteNav onOpenPalette={() => setPaletteOpen(true)} />
       <main>
         <Hero />
+        <About />
+        <Experience />
+        <Skills />
+        <Contact onCopyEmail={copyEmail} />
       </main>
     </>
   )
