@@ -78,7 +78,7 @@ export const experience: Experience[] = [
       'Wrote automated tests to check the generated data for integrity and correctness',
       'Documented the system with architecture diagrams, workflows and data models',
     ],
-    tags: ['Llama 2 7B', 'Synthetic data', 'Python', 'Testing'],
+    tags: ['Llama 2 7B', 'Synthetic data', 'Python', 'SQL', 'Testing'],
   },
   {
     id: 'excelacom',
@@ -108,9 +108,11 @@ export const experience: Experience[] = [
     stats: [],
     bullets: [
       'Completed a 3-year pre-college program building full-stack web apps',
-      'Worked with Python, Flask, REST APIs, SQL databases and Git',
+      'Built apps with Python and Flask in an MVC structure, backed by MySQL databases',
+      'Designed front ends with HTML/CSS and Bootstrap',
+      'Used Git for version control and learned DevOps practices for shipping code',
     ],
-    tags: ['Python', 'Flask', 'REST APIs', 'SQL', 'Git'],
+    tags: ['Python', 'Flask', 'MySQL', 'HTML/CSS', 'Bootstrap', 'Git', 'MVC', 'DevOps'],
   },
 ]
 
@@ -266,9 +268,9 @@ export const skillGroups: { title: string; items: { n: string; used: string[] }[
     items: [
       { n: 'Python', used: ['smd', 'mf', 'ina', 'cwhq'] },
       { n: 'TypeScript', used: ['cs'] },
-      { n: 'SQL', used: ['cs', 'mf', 'cwhq'] },
+      { n: 'SQL', used: ['cs', 'mf', 'ina', 'cwhq'] },
       { n: 'JavaScript', used: ['md'] },
-      { n: 'HTML/CSS', used: ['mf', 'md'] },
+      { n: 'HTML/CSS', used: ['mf', 'md', 'cwhq'] },
       { n: 'Java', used: [] },
     ],
   },
@@ -279,7 +281,7 @@ export const skillGroups: { title: string; items: { n: string; used: string[] }[
       { n: 'React', used: ['cs'] },
       { n: 'Tailwind CSS', used: ['cs'] },
       { n: 'Flask', used: ['mf', 'cwhq'] },
-      { n: 'Bootstrap', used: ['mf'] },
+      { n: 'Bootstrap', used: ['mf', 'cwhq'] },
       { n: 'pandas', used: ['smd'] },
       { n: 'NumPy', used: ['smd'] },
       { n: 'SciPy', used: ['smd'] },
@@ -289,13 +291,16 @@ export const skillGroups: { title: string; items: { n: string; used: string[] }[
     ],
   },
   {
-    title: 'Data & Tools',
+    title: 'Data, Tools & Practices',
     items: [
       { n: 'PostgreSQL', used: ['cs', 'smd'] },
+      { n: 'MySQL', used: ['cwhq'] },
       { n: 'Supabase', used: ['cs'] },
       { n: 'Jupyter', used: ['smd'] },
       { n: 'Git/GitHub', used: ['smd', 'cs', 'mf', 'cwhq'] },
       { n: 'Vercel', used: ['cs', 'smd'] },
+      { n: 'MVC', used: ['cwhq'] },
+      { n: 'DevOps', used: ['cwhq'] },
       { n: 'JUnit', used: [] },
       { n: 'Salesforce', used: [] },
     ],
