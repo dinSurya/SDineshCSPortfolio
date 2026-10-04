@@ -15,7 +15,7 @@ Built with **React 19**, **TypeScript**, **Vite** and **Tailwind CSS v4**.
   - [The Music Factory](https://suryad.pythonanywhere.com): free music-theory lessons ([code](https://github.com/dinSurya/TheMusicFactory))
   - [My Desktop](https://github.com/dinSurya/my-desktop): browser desktop capstone
 - **Skills**: pick a project to highlight the skills it used
-- **Contact**: form, direct links and résumé download
+- **Contact**: form, direct links and resume download
 - **⌘K / Ctrl+K**: command palette for quick navigation
 
 ## Development
@@ -31,7 +31,7 @@ npm run preview  # serve the production build
 
 All text lives in [`src/data/content.ts`](src/data/content.ts): profile links, terminal commands, experience, projects (including case-study tabs) and skills. The carousel, case-study modal, skills filter and command palette all read from it.
 
-- Résumé: replace `public/Surya_Dineshkumar_Resume.pdf`
+- Resume: replace `public/Surya_Dineshkumar_Resume.pdf`
 - Project screenshots: `public/assets/projects/`
 
 ## Contact form
@@ -45,7 +45,7 @@ Any static host works. On **Vercel** or **Netlify**, import the repo; the defaul
 ## Structure
 
 ```
-public/                  static files (favicons, photo, résumé, screenshots)
+public/                  static files (favicons, photo, resume, screenshots)
 src/
   data/content.ts        all site content
   components/            one component per section, plus modal, palette, toast

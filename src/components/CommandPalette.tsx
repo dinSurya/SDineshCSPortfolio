@@ -26,7 +26,7 @@ export default function CommandPalette({ open, onClose, onOpenProject, onCopyEma
       })),
       ...projects.map((p) => ({ group: 'PROJECTS', icon: 'P', label: p.title, hint: 'case study', run: () => onOpenProject(p.id) })),
       { group: 'ACTIONS', icon: '@', label: 'Copy email address', hint: profile.email, run: onCopyEmail },
-      { group: 'ACTIONS', icon: '↓', label: 'Open résumé (PDF)', run: () => openUrl(profile.resume) },
+      { group: 'ACTIONS', icon: '↓', label: 'Open resume (PDF)', run: () => openUrl(profile.resume) },
       { group: 'ACTIONS', icon: '↗', label: 'Open GitHub', hint: 'github.com/dinSurya', run: () => openUrl(profile.github) },
       { group: 'ACTIONS', icon: '↗', label: 'Open LinkedIn', run: () => openUrl(profile.linkedin) },
     ],

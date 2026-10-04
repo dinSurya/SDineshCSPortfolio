@@ -44,7 +44,7 @@ export default function Contact({ onCopyEmail }: { onCopyEmail: () => void }) {
     { label: profile.email, href: `mailto:${profile.email}`, arrow: '→' },
     { label: 'LinkedIn', href: profile.linkedin, arrow: '↗' },
     { label: 'GitHub', href: profile.github, arrow: '↗' },
-    { label: 'Résumé (PDF)', href: profile.resume, arrow: '↓' },
+    { label: 'Resume (PDF)', href: profile.resume, arrow: '↓' },
   ]
 
   return (

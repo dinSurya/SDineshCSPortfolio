@@ -51,7 +51,7 @@ export default function SiteNav({ onOpenPalette }: { onOpenPalette: () => void }
             <SearchIcon />⌘K
           </button>
           <a href={profile.resume} target="_blank" rel="noreferrer" className="btn-acc hidden !px-[18px] !py-2.5 !text-sm sm:inline-flex">
-            Résumé ↓
+            Resume ↓
           </a>
           <button
             type="button"
@@ -94,7 +94,7 @@ export default function SiteNav({ onOpenPalette }: { onOpenPalette: () => void }
           <div className="mt-auto flex flex-col gap-3 font-mono text-[13px] text-muted">
             <a href={`mailto:${profile.email}`} className="text-muted no-underline hover:text-accent">{profile.email}</a>
             <div className="flex gap-5">
-              <a href={profile.resume} target="_blank" rel="noreferrer" className="text-paper hover:text-accent">Résumé ↓</a>
+              <a href={profile.resume} target="_blank" rel="noreferrer" className="text-paper hover:text-accent">Resume ↓</a>
               <a href={profile.linkedin} target="_blank" rel="noreferrer" className="text-paper hover:text-accent">LinkedIn ↗</a>
               <a href={profile.github} target="_blank" rel="noreferrer" className="text-paper hover:text-accent">GitHub ↗</a>
             </div>
