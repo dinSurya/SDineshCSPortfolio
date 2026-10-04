@@ -23,8 +23,8 @@ export default function Hero() {
             <span className="block text-accent">Dineshkumar</span>
           </h1>
           <p className="m-0 max-w-[540px] text-[19px] leading-relaxed text-pretty text-soft">
-            I build full-stack apps and data pipelines. Looking for software engineering and data science internships for
-            Summer 2027.
+            CS major with minors in Mathematics and Computational Finance. I build full-stack apps and data pipelines,
+            and I’m looking for software engineering and data science internships for Summer 2027.
           </p>
           <div className="flex flex-wrap gap-3">
             <a className="btn-acc" href="#projects">View projects →</a>
