@@ -27,11 +27,11 @@ export default function About() {
           </div>
 
           <div className={`${tile} flex min-h-[260px] flex-[1_1_260px] flex-col justify-between gap-4 border-accent bg-accent p-7 text-ink`}>
-            <span className="font-mono text-xs">UMD · EXPECTED MAY 2028</span>
+            <span className="font-mono text-xs">UMD · EXPECTED MAY 2029</span>
             <div className="flex flex-col gap-1">
               <span className="font-display text-[72px] leading-none font-extrabold tracking-[-0.04em]">3.88</span>
-              <span className="text-[15px] font-medium">GPA · B.S. Computer Science</span>
-              <span className="text-sm">Minors: Mathematics, Computational Finance</span>
+              <span className="text-[15px] font-medium">GPA · B.S. Computer Science & Mathematics</span>
+              <span className="text-sm">Minor: Computational Finance</span>
             </div>
           </div>
 

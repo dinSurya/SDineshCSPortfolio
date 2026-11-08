@@ -23,7 +23,7 @@ export default function Hero() {
             <span className="block text-accent">Dineshkumar</span>
           </h1>
           <p className="m-0 max-w-[540px] text-[19px] leading-relaxed text-pretty text-soft">
-            CS major with minors in Mathematics and Computational Finance. I build full-stack apps and data pipelines,
+            CS and Math double major with a minor in Computational Finance. I build full-stack apps and data pipelines,
             and I’m looking for software engineering and data science internships for Summer 2027.
           </p>
           <div className="flex flex-wrap gap-3">

@@ -28,8 +28,8 @@ export type SectionId = (typeof sections)[number]['id']
 export const commands: Record<string, string[]> = {
   whoami: [
     'Surya Dineshkumar',
-    'B.S. Computer Science, University of Maryland (May 2028)',
-    'Minors: Mathematics, Computational Finance',
+    'B.S. Computer Science & B.S. Mathematics, University of Maryland (May 2029)',
+    'Minor: Computational Finance',
   ],
   'cat now.txt': [
     'building   Cleaning Scheduler (Next.js + Supabase)',
