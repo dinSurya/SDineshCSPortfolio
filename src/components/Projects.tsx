@@ -8,6 +8,7 @@ const filters = [
   { id: 'all', label: 'All' },
   { id: 'data', label: 'Data' },
   { id: 'web', label: 'Full-stack' },
+  { id: 'mobile', label: 'Mobile' },
 ] as const
 
 type Filter = (typeof filters)[number]['id']

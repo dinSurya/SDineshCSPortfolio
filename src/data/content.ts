@@ -37,6 +37,7 @@ export const commands: Record<string, string[]> = {
     'seeking    Summer 2027 SWE / DS internships',
   ],
   'ls projects/': [
+    'vitalline/',
     'success-metrics-dashboard/',
     'cleaning-scheduler/',
     'the-music-factory/',
@@ -123,7 +124,7 @@ export type ProjectLink = { label: string; href: string; kind: 'code' | 'demo' |
 
 export type Project = {
   id: string
-  cat: 'data' | 'web'
+  cat: 'data' | 'web' | 'mobile'
   title: string
   date: string
   context: string
@@ -138,6 +139,35 @@ export type Project = {
 }
 
 export const projects: Project[] = [
+  {
+    id: 'vl',
+    cat: 'mobile',
+    title: 'VitalLine',
+    date: 'NOV 2026',
+    context: 'HackPrinceton Fall 2026 · 3-person team',
+    summary:
+      'An iOS decision aid that guides paramedics from dispatch to a patient inside large buildings, with an equipment-aware route checked by six AI agents.',
+    overview: [
+      'In a large building, reaching the patient means finding the right entrance, the right elevator, and a hallway a stretcher can actually turn through. VitalLine plans that whole path, from the drive to the route inside, and the crew makes the final call.',
+      'A multi-agent backend resolves the building, plans the outdoor and indoor routes, checks door widths and turns for each piece of equipment, and verifies every time estimate with Wolfram before a crew brief is written.',
+      'My role: built the SwiftUI frontend of the iOS app and designed the API contract between the app and the agent backend.',
+    ],
+    approach: [
+      'Built the iOS app in SwiftUI, with MapKit for the drive and arrival views',
+      'Designed the JSON API contract and a mock data layer so the app could be built before the multi-agent backend existed',
+      'Added live progress tracking as each of the six LangChain agents finishes its step',
+      'Built a response history that compares predicted vs. actual access time for each call',
+    ],
+    results: [
+      { v: '6', k: 'LangChain agents tracked live in the app' },
+      { v: 'Mock-first', k: 'API contract so frontend and backend were built in parallel' },
+    ],
+    stack: ['Swift', 'SwiftUI', 'MapKit', 'Python', 'LangChain', 'Wolfram Language'],
+    links: [
+      { label: 'Devpost', href: 'https://devpost.com/software/vitalline', kind: 'writeup' },
+      { label: 'Code', href: 'https://github.com/Reem927/VitalLine', kind: 'code' },
+    ],
+  },
   {
     id: 'smd',
     cat: 'data',
@@ -257,6 +287,7 @@ export const projects: Project[] = [
 // Each skill lists the source ids (project or experience) where it was used.
 export const skillSources = [
   { id: 'all', label: 'Everything' },
+  { id: 'vl', label: 'VitalLine' },
   { id: 'smd', label: 'Success Metrics Dashboard' },
   { id: 'cs', label: 'Cleaning Scheduler' },
   { id: 'mf', label: 'The Music Factory' },
@@ -271,6 +302,7 @@ export const skillGroups: { title: string; items: { n: string; used: string[] }[
     items: [
       { n: 'Python', used: ['smd', 'mf', 'ina', 'cwhq'] },
       { n: 'TypeScript', used: ['cs'] },
+      { n: 'Swift', used: ['vl'] },
       { n: 'SQL', used: ['cs', 'mf', 'ina', 'cwhq'] },
       { n: 'JavaScript', used: ['md'] },
       { n: 'HTML/CSS', used: ['mf', 'md', 'cwhq'] },
@@ -283,6 +315,7 @@ export const skillGroups: { title: string; items: { n: string; used: string[] }[
       { n: 'Next.js', used: ['cs'] },
       { n: 'React', used: ['cs'] },
       { n: 'Tailwind CSS', used: ['cs'] },
+      { n: 'SwiftUI', used: ['vl'] },
       { n: 'Flask', used: ['mf', 'cwhq'] },
       { n: 'Bootstrap', used: ['mf', 'cwhq'] },
       { n: 'pandas', used: ['smd'] },
@@ -300,7 +333,7 @@ export const skillGroups: { title: string; items: { n: string; used: string[] }[
       { n: 'MySQL', used: ['cwhq'] },
       { n: 'Supabase', used: ['cs'] },
       { n: 'Jupyter', used: ['smd'] },
-      { n: 'Git/GitHub', used: ['smd', 'cs', 'mf', 'cwhq'] },
+      { n: 'Git/GitHub', used: ['vl', 'smd', 'cs', 'mf', 'cwhq'] },
       { n: 'Vercel', used: ['cs', 'smd'] },
       { n: 'MVC', used: ['cwhq'] },
       { n: 'DevOps', used: ['cwhq'] },
